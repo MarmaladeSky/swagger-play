@@ -5,9 +5,9 @@ scalaVersion := "2.13.1"
 
 crossScalaVersions := Seq(scalaVersion.value, "2.12.10")
 
-val PlayVersion = "2.7.3"
+val PlayVersion = "2.8.7"
 val SwaggerVersion = "1.5.24"
-val Specs2Version = "4.6.0"
+val Specs2Version = "4.10.6"
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play" % PlayVersion,
@@ -18,11 +18,11 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-collection-compat" % "2.1.2",
   "org.slf4j" % "slf4j-api" % "1.7.21",
 
-  "com.typesafe.play" %% "play-ebean" % "5.0.2" % "test",
+  "com.typesafe.play" %% "play-ebean" % "6.0.0" % "test",
   "org.specs2" %% "specs2-core" % Specs2Version % "test",
   "org.specs2" %% "specs2-mock" % Specs2Version % "test",
   "org.specs2" %% "specs2-junit" % Specs2Version % "test",
-  "org.mockito" % "mockito-core" % "2.21.0" % "test"
+  "org.mockito" % "mockito-core" % "3.2.4" % "test"
 )
 
 // see https://github.com/scala/bug/issues/11813
